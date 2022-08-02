@@ -28,7 +28,7 @@
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
   #about {
     .about-header {
       font-size: 2rem;
@@ -38,6 +38,14 @@
     }
     .about-text-block {
       margin-right: 0px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  #about {
+    .about-image {
+      width: 500px;
     }
   }
 }
