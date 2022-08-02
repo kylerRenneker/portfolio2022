@@ -108,7 +108,7 @@ section {
     }
 
     #experience {
-      height: 50vh;
+      //   height: 50vh;
     }
 
     .section-container {
@@ -146,7 +146,7 @@ section {
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
   section {
     header {
       &::after {
