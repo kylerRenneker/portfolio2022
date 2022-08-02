@@ -1,6 +1,6 @@
 import dndcms from "../../assets/dndcms.gif";
 import apiSvg from "../../assets/projectApi.svg";
-import revComm from "../../assets/revComm.svg";
+// import revComm from "../../assets/revComm.svg";
 import npmPkg from "../../assets/npmPkg.svg";
 import pim from "../../assets/pim.png";
 

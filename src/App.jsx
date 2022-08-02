@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./main.scss";
 import logo from "./assets/logo.svg";
-import gitLogo from "./assets/githubIcon.svg";
+// import gitLogo from "./assets/githubIcon.svg";
 import ExperienceSection from "./sections/ExperienceSection/Section";
 import WorkSection from "./sections/WorkSection/Section";
 import AboutSection from "./sections/AboutSection/Section";

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { SectionHeader } from "../../components/SectionHeader";
+// import { SectionHeader } from "../../components/SectionHeader";
 import "./ContactSection.scss";
 
 const Contact = () => {
