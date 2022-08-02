@@ -1,0 +1,75 @@
+@use "../../variables.scss";
+
+.section-container {
+  .experience-list {
+    display: flex;
+    .experience-tabs {
+      padding: 0 26px 0 0;
+      display: flex;
+      flex-direction: column;
+
+      .tab-btn {
+        border: none;
+        padding: 18px 26px;
+        background-color: variables.$primary-color;
+        color: variables.$text-color-light;
+        font-size: 1.2rem;
+        text-align: left;
+        border-left: 3px solid #007ea7;
+        transition: 0.3s;
+
+        &:hover,
+        &.active {
+          cursor: pointer;
+          background-color: #007ea7;
+          color: variables.$primary-color;
+          border-left: 3px solid variables.$accent-color;
+        }
+      }
+    }
+  }
+
+  .experience-content {
+    .exp-tab {
+      width: 400px;
+      position: absolute;
+      transition: 0.3s;
+
+      h3,
+      p {
+        margin-bottom: 10px;
+      }
+      .experience-summary {
+        line-height: 1.3rem;
+      }
+    }
+    .active-tab {
+      opacity: 1;
+    }
+    .inactive-tab {
+      opacity: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .section-container {
+    .experience-list {
+      flex-direction: column;
+      .experience-tabs {
+        flex-direction: row;
+
+        padding: 0 0 20px 0;
+        .tab-btn {
+          padding: 0 5px;
+          font-size: 1rem;
+        }
+      }
+    }
+    .experience-content {
+      .exp-tab {
+        width: auto;
+      }
+    }
+  }
+}

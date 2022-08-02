@@ -1,0 +1,43 @@
+@use "../../variables.scss";
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -77px;
+
+  .about-header {
+    margin: 40px 0;
+    span {
+      color: variables.$text-color-light;
+    }
+    p {
+      margin-top: 20px;
+    }
+  }
+  .about-text-block {
+    margin-right: 100px;
+    .header-summary {
+      line-height: 1.5rem;
+    }
+  }
+
+  .about-image {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  #about {
+    .about-header {
+      font-size: 2rem;
+    }
+    .about-image {
+      display: none;
+    }
+    .about-text-block {
+      margin-right: 0px;
+    }
+  }
+}

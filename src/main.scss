@@ -1,0 +1,170 @@
+@use "./variables.scss";
+
+html {
+  scroll-behavior: smooth;
+  * {
+    box-sizing: border-box;
+  }
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: variables.$text-color;
+
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  h4,
+  h5,
+  h6 {
+    font-size: 1rem;
+  }
+}
+
+.mono {
+  font-family: "Space Mono", monospace;
+}
+
+.accent {
+  color: variables.$accent-color;
+}
+
+.section-pad-top {
+  padding-top: 100px;
+}
+
+.section-pad-bottom {
+  padding-bottom: 100px;
+}
+
+section {
+  header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    &::after {
+      content: "";
+      display: block;
+      position: relative;
+      width: 300px;
+      height: 1px;
+      margin-left: 20px;
+      background-color: variables.$text-color-dark;
+    }
+  }
+}
+
+#app {
+  background-color: variables.$primary-color;
+  height: 100%;
+
+  .portfolio-header {
+    position: fixed;
+    width: 100%;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: variables.$primary-color;
+
+    .header-logo {
+      width: 40px;
+      height: 45px;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+
+      li {
+        margin-right: 20px;
+        a {
+          transition: 0.3s;
+          color: #f5f0f6;
+          text-decoration: none;
+          span {
+            color: variables.$accent-color;
+          }
+          &:hover {
+            color: variables.$accent-color;
+          }
+        }
+      }
+    }
+  }
+
+  .content-container {
+    padding: 96px 40px 0 40px;
+    margin: auto;
+    max-width: 1600px;
+
+    .section-number {
+      margin-right: 10px;
+    }
+
+    #experience {
+      height: 50vh;
+    }
+
+    .section-container {
+      max-width: 700px;
+      margin: auto;
+    }
+  }
+}
+
+.social-links {
+  position: fixed;
+  bottom: 30px;
+  left: 40px;
+  ul {
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 120px;
+      margin: auto;
+      background-color: variables.$accent-color;
+    }
+  }
+  .social-icon {
+    position: relative;
+    bottom: 0;
+    width: 20px;
+    color: variables.$text-color;
+    margin-bottom: 15px;
+    transition: 0.3s;
+    &:hover {
+      color: variables.$accent-color;
+      bottom: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  section {
+    header {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  #app {
+    .content-container {
+      padding: 100px 20px 0 20px;
+    }
+    .portfolio-header {
+      .nav-list {
+        display: none;
+      }
+    }
+  }
+  .social-links {
+    display: none;
+  }
+}
