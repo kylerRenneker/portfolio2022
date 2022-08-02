@@ -11,7 +11,9 @@ function App() {
   return (
     <div id="app">
       <header className="portfolio-header">
-        <img className="header-logo" src={logo} alt="logo" />
+        <a href="#about">
+          <img className="header-logo" src={logo} alt="logo" />
+        </a>
         <ul className="nav-list mono">
           <li>
             <a href="#about">
