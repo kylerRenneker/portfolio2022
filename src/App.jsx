@@ -62,7 +62,7 @@ function App() {
                 </svg>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="https://www.instagram.com/kyler_renn94">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -81,9 +81,9 @@ function App() {
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg>
               </a>
-            </li>
+            </li> */}
             <li>
-              <a href="https://www.instagram.com/kyler_renn94">
+              <a href="https://www.linkedin.com/in/kyler-rennneker/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   role="img"
